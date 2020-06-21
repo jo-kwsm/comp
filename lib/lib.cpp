@@ -27,7 +27,7 @@ bool is_prime(ll n) {
   return n!=1;
 }
 
-//約数列挙
+//約数列挙o(nlogn)
 vec divisor(ll n) {
   vector<ll> res;
   for(ll i=1;i*i<=n;i++) {
@@ -38,6 +38,7 @@ vec divisor(ll n) {
       }
     }
   }
+  sort(res.begin(),res.end());
   return res;
 }
 
