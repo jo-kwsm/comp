@@ -59,15 +59,15 @@ map<ll,ll> prime_factor(ll n) {
 
 //繰り返し自乗法
 ll mpow(ll x, ll n) {
-  ll ans=1;
+  ll res=1;
   while(n>0) {
     if(n&1) {
-      ans=ans*x%mod;
+      res=res*x%mod;
     }
     x=x*x%mod;
     n>>=1;
   }
-  return ans;
+  return res;
 }
 
 //階乗,factで初期化
