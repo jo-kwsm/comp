@@ -11,9 +11,10 @@ const ll inf=1LL<<61;
 vec par(2e5+10);
 map<ll,ll> si;
 void init(ll n) {
+  si.clear();
   for(ll i=0;i<n;i++) {
     par[i]=i;
-    si[i]++;
+    si[i]=1;
   }
 }
 
